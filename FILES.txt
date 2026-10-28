@@ -1,0 +1,15 @@
+Files in this project:
+
+README.md                  Setup and deployment instructions
+scrape.mjs                 Playwright scraper and ICS generator
+package.json               Node dependencies and build command
+.github/workflows/publish.yml  GitHub Actions automation (hidden folder on macOS)
+LICENSE                    MIT license
+.gitignore                 Git ignore rules (hidden file on macOS)
+FILES.txt                  This manifest
+
+IMPORTANT: Upload the .github folder to your repository. GitHub Actions needs
+.github/workflows/publish.yml at precisely this path.
+
+This is a prototype: verify it extracts the actual NYC dated menu cards before
+using the feed as a reliable source of daily meals.

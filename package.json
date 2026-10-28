@@ -1,0 +1,1 @@
+{"name":"nyc-school-meals-calendar","private":true,"type":"module","scripts":{"build":"node scrape.mjs"},"dependencies":{"playwright":"^1.56.1"}}
