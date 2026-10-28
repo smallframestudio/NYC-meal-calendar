@@ -8,3 +8,11 @@ This project is independently developed and is not affiliated with or endorsed b
 - Lunch: https://www.schools.nyc.gov/school-life/school-meals/menus/school-lunch-meals?value=s8
 
 Menus may vary by school and can change without notice.
+
+To subscribe:
+
+1. Open Google Calendar on a computer.
+2. Under Other calendars, click +.
+3. Select From URL.
+4. Paste this address:
+https://smallframestudio.github.io/nycmealcalendar/meals.ics
