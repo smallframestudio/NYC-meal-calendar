@@ -13,7 +13,7 @@ const escapeIcs = s => s.replace(/\\/g,'\\\\').replace(/\r?\n/g,'\\n').replace(/
 const fold = line => { const chunks=[]; let segment=''; for (const ch of line) { if(Buffer.byteLength(segment+ch,'utf8')>73){chunks.push(segment);segment=' '+ch;} else segment+=ch;} chunks.push(segment);return chunks.join('\r\n');};
 function calendar(events){
   const now=new Date().toISOString().replace(/[-:]/g,'').replace(/\.\d{3}/,'');
-  const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//NYC School Meals//Menu Calendar//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH','X-WR-CALNAME:NYC School Breakfast and Lunch','X-WR-TIMEZONE:America/New_York','REFRESH-INTERVAL;VALUE=DURATION:P1D'];
+  const lines=['BEGIN:VCALENDAR','VERSION:2.0','PRODID:-//NYC School Meals//Menu Calendar//EN','CALSCALE:GREGORIAN','METHOD:PUBLISH','X-WR-CALNAME:NYC School Meals','X-WR-TIMEZONE:America/New_York','REFRESH-INTERVAL;VALUE=DURATION:P1D'];
   for(const ev of events){
     const day=ev.date.replaceAll('-','');
     const next=new Date(ev.date+'T12:00:00Z'); next.setUTCDate(next.getUTCDate()+1);
