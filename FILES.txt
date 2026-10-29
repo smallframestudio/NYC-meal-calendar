@@ -1,8 +1,11 @@
 Files in this project:
 
 README.md                  Setup and deployment instructions
-scrape.mjs                 Playwright scraper and ICS generator
-package.json               Node dependencies and build command
+scrape.mjs                 Page-defined CSV discovery, downloads, and ICS generator
+menu.mjs                   NYC month/date handling, CSV parsing, and deduplication
+package.json               Node dependencies, test and build commands
+test/menu.test.mjs         Automated regression tests
+test/fixtures/             Captured NYCPS October/November 2026 CSV menus
 .github/workflows/publish.yml  GitHub Actions automation (hidden folder on macOS)
 LICENSE                    MIT license
 .gitignore                 Git ignore rules (hidden file on macOS)
@@ -11,5 +14,5 @@ FILES.txt                  This manifest
 IMPORTANT: Upload the .github folder to your repository. GitHub Actions needs
 .github/workflows/publish.yml at precisely this path.
 
-This is a prototype: verify it extracts the actual NYC dated menu cards before
-using the feed as a reliable source of daily meals.
+Run npm test and npm run build before publishing. The generated public/ folder
+is rebuilt by GitHub Actions; it is not committed to the repository.
