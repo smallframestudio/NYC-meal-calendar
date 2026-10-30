@@ -20,4 +20,4 @@ separate all-day events, with the complete dated menu in each description.
 2. Under Other calendars, click +.
 3. Select From URL.
 4. Paste this address:
-https://smallframestudio.github.io/nycmealcalendar/meals.ics
+https://smallframestudio.github.io/NYC-meal-calendar/meals.ics
